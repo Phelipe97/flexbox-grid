@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Inicio */
+/* .container{
+    display: grid;
+    background-color:#333 ;
+    border: 3px solid red;
+    padding: 15px;
+    grid-template-columns: 50px auto 10%;
+    height: 35vh;
+    grid-template-rows:70% 30% ;
+    gap: .5rem;
+    /* 
+    Alternativas configurar o gap separado
+    
+    row-gap: 10px;
+    column-gap: 15px; 
+} 
+ /*
+.container *{
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+}  */
+
+/* Template area */
+/* .container{
+    display: grid;
+    background-color:#333 ;
+    border: 3px solid rgb(255, 0, 0);
+    padding: 15px;
+    gap: .5rem;
+    grid-template-areas: 
+    "head head head head"
+    "side main main main"
+    "foot foot foot foot";
+}
+.container *{
+    background-color: #ccc;
+    padding: 20px;
+}
+#header{
+    grid-area: head;
+}  
+#sidebar{
+    grid-area: side;
+    height: 60vh;
+}  
+#main{
+    grid-area: main;
+    height: 60vh;
+}  
+#footer{
+    grid-area: foot;
+}   */
+
+/* Alinhamento */
+/* .container{
+    display: grid;
+    background-color:#333 ;
+    border: 3px solid rgb(255, 0, 0);
+    padding: 15px;
+    grid-template-columns:auto auto auto ;
+    height: 50vh;
+    /* horizontal 
+    justify-content: center;
+    /* vertical 
+    align-items: center;
+} */
+/* .container *{
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+} */
+/* Items */
+.container{
+    display: grid;
+    background-color:#333 ;
+    border: 3px solid rgb(255, 0, 0);
+    grid-template-columns:repeat(3,auto) ;
+    grid-template-rows:repeat(3,auto) ;
+    padding: 15px;
+    height: 70vh;
+}
+.container *{
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+    
+}
+#item-1{
+   grid-column: 1/4; 
+}
+#item-2{
+    grid-row: 2/4;
+}
+#item-3{
+    justify-self: end;
+}
+#item-4{
+    grid-column: 3;
+    grid-row: 2/4;
+    align-self: center;
+}
+#item-5{
+    justify-self: start;
+}
+#item-6{
+    grid-column: 1/4; 
+ }

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns:[site-start] 1fr [content-start] repeat(4,1fr)[site-end];
+    grid-template-rows:[site-top]150px[content-top]150px[content-bottom] 150px[site-bottom];
+    gap:.5rem;
+}
+.container *{
+    background-color: royalblue;
+    padding: 1rem;
+}
+.container *:nth-child(even){
+    background-color: skyblue;
+}
+
+header,footer{
+   grid-column: site; 
+}
+main{
+    grid-column: content-start/site-end;
+    grid-row: site-bottom/content-top;
+}
+aside{
+    grid-column:site-start/content-start ;
+    grid-row:site-bottom/content-top;
+}

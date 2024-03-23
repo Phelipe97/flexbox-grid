@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 150px;
+    gap:10px;
+    grid-template-areas:
+    "head head head head"
+    "asi main main main"
+    "asi main main main"
+    "asi main main main"
+    "asi fot fot fot"
+    ;
+}
+.container *{
+    background-color: royalblue;
+    padding: 1rem;
+}
+.container *:nth-child(even){
+    background-color: skyblue;
+}
+header{
+    grid-area: head;
+}
+main{
+    grid-area: main;
+}
+aside{
+    grid-area: asi;
+}
+footer{
+    grid-area: fot;
+}
+@media screen and (max-width:500px) {
+    .container{
+        grid-auto-rows:50px;
+        grid-template-areas:
+        "head head head head"
+        "asi asi asi asi"
+        "main main main main"
+        "main main main main"
+        "fot fot fot fot"
+        ; 
+    }
+}

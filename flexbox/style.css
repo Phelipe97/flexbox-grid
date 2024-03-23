@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+    /* width: 400px; obs:feito para o flex-shrink*/
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content:center;
+    row-gap: 10px; 
+    column-gap: 30px;
+    align-content:center;
+    align-items:center;
+    /* configuração geral do container */
+    height:500px;
+    padding: 16px;
+    background-color: lightgray;
+  }
+  div{
+    width:150px;
+    height:150px;
+    text-align: center;
+    background-color:green;
+    border-radius:5px;
+  }
+  .b1{
+    order: 0;
+    /* flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto; */
+    flex: 0 1 auto;
+    align-self:flex-start;
+    background-color:red;
+  }
+  .b2{
+    order: 0;
+    /* flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto; */
+    flex: 0 1 auto;
+    background-color:blue;
+  }
+  .b3{
+    order: 0;
+    /* flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto; */
+    flex: 0 1 auto;
+    align-self:flex-end;
+    background-color:yellow;
+  }
